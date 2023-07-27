@@ -1,0 +1,33 @@
+.grid__container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,100px);
+    gap: 15px;
+    grid-auto-flow: dense;
+}
+.block{
+    background: maroon;
+}
+
+.block:nth-child(1) {
+    grid-column: span 4;
+}
+
+.block:nth-child(2) {
+    grid-row: span 2;
+   
+}
+
+
+.block:nth-child(3) {
+    grid-column: span 1.5;
+}
+
+.block:nth-child(4) {
+    grid-column: span 1.5;
+}
+
+.block:nth-child(5) {
+    grid-row-start: 3;
+    
+}
